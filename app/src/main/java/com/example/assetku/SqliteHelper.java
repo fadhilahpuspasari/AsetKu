@@ -5,7 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
+import android.util.Log;
 
 
 public class SqliteHelper extends SQLiteOpenHelper {
@@ -50,7 +50,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         //Create Table when oncreate gets called
         sqLiteDatabase.execSQL(SQL_TABLE_USERS);
-
+        Log.d("DB","Database created");
     }
 
     @Override

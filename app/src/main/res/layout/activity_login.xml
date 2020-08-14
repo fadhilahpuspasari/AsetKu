@@ -10,7 +10,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -21,8 +21,8 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -78,13 +78,13 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextEmail"
-                android:layout_width="330dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="24dp"
                 android:hint="@string/email"
-                android:inputType="textEmailAddress"/>
+                android:inputType="textEmailAddress" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -99,35 +99,34 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextPassword"
-                android:layout_width="330dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="24dp"
                 android:hint="@string/password"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
             android:id="@+id/buttonLogin"
-            android:background="@drawable/button1"
-            android:layout_width="325dp"
+            android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_gravity="start"
-            android:textSize="15sp"
-            android:textColor="#1394C5"
             android:layout_marginLeft="27dp"
             android:layout_marginTop="30dp"
-            android:enabled="false"
-            android:textAllCaps="false"
+            android:background="@drawable/button1"
             android:text="@string/action_sign_in"
+            android:textAllCaps="false"
+            android:textColor="#1394C5"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/password"
-            app:layout_constraintVertical_bias="0.2"/>
+            app:layout_constraintVertical_bias="0.2" />
 
         <Button
             android:id="@+id/lupapassword"
@@ -148,14 +147,13 @@
 
         <Button
             android:id="@+id/buttonRegister"
-            android:layout_width="325dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/button2"
-            android:enabled="false"
             android:text="@string/register"
             android:textAllCaps="false"
             android:textColor="#ffffff"

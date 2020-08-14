@@ -2,6 +2,8 @@ package com.example.assetku;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -30,6 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
     //Declaration SqliteHelper
     SqliteHelper sqliteHelper;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,28 +40,35 @@ public class RegisterActivity extends AppCompatActivity {
         sqliteHelper = new SqliteHelper(this);
         initTextViewLogin();
         initViews();
+
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                System.out.println("Register button clicked");
                 if (validate()) {
                     String UserName = editTextUserName.getText().toString();
                     String Email = editTextEmail.getText().toString();
                     String Password = editTextPassword.getText().toString();
+                    boolean isEmailExist = sqliteHelper.isEmailExists(Email);
+
+                    System.out.println("Is email exist: " + isEmailExist);
 
                     //Check in the database is there any user associated with  this email
-                    if (!sqliteHelper.isEmailExists(Email)) {
-
+                    if (!isEmailExist) {
+                        System.out.println("Create a new user");
                         //Email does not exist now add new user to database
                         sqliteHelper.addUser(new User(null, UserName, Email, Password));
                         Snackbar.make(buttonRegister, "User created successfully! Please Login ", Snackbar.LENGTH_LONG).show();
                         new Handler().postDelayed(new Runnable() {
                             @Override
                             public void run() {
+                                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                                startActivity(intent);
                                 finish();
                             }
                         }, Snackbar.LENGTH_LONG);
                     }else {
-
+                        System.out.println("Email exist");
                         //Email exists with email input provided so show error user already exist
                         Snackbar.make(buttonRegister, "User already exists with same email ", Snackbar.LENGTH_LONG).show();
                     }
@@ -75,6 +85,8 @@ public class RegisterActivity extends AppCompatActivity {
         textViewLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                startActivity(intent);
                 finish();
             }
         });
