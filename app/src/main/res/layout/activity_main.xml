@@ -13,9 +13,11 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:paddingLeft="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="56dp"
-        android:paddingLeft="30dp">
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="40dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -44,7 +46,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-120dp"
+            android:layout_marginLeft="-100dp"
             android:layout_marginTop="250dp"
             android:layout_marginRight="25dp">
 
@@ -60,6 +62,13 @@
                 android:src="@mipmap/aset_foreground">
 
             </ImageButton>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+            </LinearLayout>
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -77,7 +86,8 @@
         </LinearLayout>
 
     </LinearLayout>
-<LinearLayout
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
