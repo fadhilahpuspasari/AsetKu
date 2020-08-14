@@ -1,0 +1,211 @@
+<resources>
+    <string name="app_name">Assetku</string>
+    <string name="create_account"><font color="#00ff00">text</font></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Nama</string>
+    <string name="register">Daftar</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Masuk</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_menu">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="ulp">
+        <item>-Select-</item>
+        <item>52001.Kudus Kota</item>
+        <item>52002.Jepara</item>
+        <item>52003.Bangsri</item>
+        <item>52004.Pati</item>
+        <item>52005.Juwana</item>
+        <item>52006.Rembang</item>
+        <item>52007.Blora</item>
+        <item>52008.Cepu</item>
+    </string-array>
+
+    <string-array name="pekerjaan">
+        <item>-Select-</item>
+        <item>Pasang Baru</item>
+        <item>Perubahan Daya</item>
+        <item>Pemeliharaan</item>
+        <item>Pekerjaan Fihak Ketiga</item>
+    </string-array>
+
+    <string-array name="keterangan">
+        <item>-Select-</item>
+        <item>Pasang</item>
+        <item>Bongkar Relokasi</item>
+        <item>Bongkar Rusak</item>
+        <item>Bongkar Retour (PB/PD)</item>
+    </string-array>
+
+    <string-array name="penyulang">
+        <item>-Select-</item>
+        <item>BLA01</item>
+        <item>BLA02</item>
+        <item>BLA03</item>
+        <item>BLA05</item>
+        <item>BLA06</item>
+        <item>BLA07</item>
+        <item>BLA08</item>
+
+        <item>CPU01</item>
+        <item>CPU02</item>
+        <item>CPU03</item>
+        <item>CPU04</item>
+        <item>CPU05</item>
+        <item>CPU06</item>
+
+        <item>JKO01</item>
+        <item>JKO02</item>
+        <item>JKO03</item>
+        <item>JKO04</item>
+        <item>JKO05</item>
+        <item>JKO06</item>
+        <item>JKO07</item>
+        <item>JKO08</item>
+        <item>JKO09</item>
+        <item>JKO10</item>
+
+        <item>JPR01</item>
+        <item>JPR02</item>
+        <item>JPR03</item>
+        <item>JPR04</item>
+        <item>JPR05</item>
+        <item>JPR06</item>
+        <item>JPR07</item>
+        <item>JPR08</item>
+        <item>JPR09</item>
+        <item>JPR10</item>
+        <item>JPR11</item>
+        <item>JPR12</item>
+        <item>JPR13</item>
+        <item>JPR14</item>
+
+        <item>KDS01</item>
+        <item>KDS02</item>
+        <item>KDS03</item>
+        <item>KDS04</item>
+        <item>KDS05</item>
+        <item>KDS06</item>
+        <item>KDS07</item>
+        <item>KDS08</item>
+        <item>KDS09</item>
+        <item>KDS10</item>
+        <item>KDS11</item>
+        <item>KDS12</item>
+        <item>KDS13</item>
+        <item>KDS14</item>
+        <item>KDS15</item>
+        <item>KDS16</item>
+        <item>KDS17</item>
+        <item>KDS18</item>
+
+        <item>KRM01</item>
+        <item>KRM02</item>
+
+        <item>PT01</item>
+        <item>PT02</item>
+        <item>PT03</item>
+        <item>PT04</item>
+        <item>PT05</item>
+        <item>PT06</item>
+        <item>PT07</item>
+        <item>PT08</item>
+        <item>PT09</item>
+        <item>PT10</item>
+        <item>PT11</item>
+        <item>PT12</item>
+        <item>PT13</item>
+        <item>PT14</item>
+        <item>PT15</item>
+        <item>PT16</item>
+        <item>PT17</item>
+        <item>PT18</item>
+
+        <item>RBG01</item>
+        <item>RBG02</item>
+        <item>RBG03</item>
+        <item>RBG04</item>
+        <item>RBG05</item>
+        <item>RBG06</item>
+        <item>RBG07</item>
+        <item>RBG08</item>
+        <item>RBG09</item>
+
+        <item>SLK01</item>
+        <item>SLK02</item>
+        <item>SLK03</item>
+        <item>SLK04</item>
+
+        <item>TJB01</item>
+        <item>TJB02</item>
+        <item>TJB03</item>
+        <item>TJB04</item>
+        <item>TJB05</item>
+        <item>TJB06</item>
+
+    </string-array>
+
+
+    <string-array name="merk">
+        <item>-Select-</item>
+        <item>ABB</item>
+        <item>BAMBANG DJAJA</item>
+        <item>CENTRADO</item>
+        <item>COOPER</item>
+        <item>HICO</item>
+        <item>MORAWA</item>
+        <item>NONAME</item>
+        <item>REKONDISI (JP,EBT)</item>
+        <item>SCHNEIDER</item>
+        <item>SINTRA</item>
+        <item>STARLITE</item>
+        <item>TRAFINDO</item>
+        <item>UNINDO</item>
+        <item>VOLTRA</item>
+        <item>LAINNYA</item>
+
+    </string-array>
+
+
+    <string-array name="phasa">
+        <item>-Select-</item>
+        <item>1 Phasa</item>
+        <item>3 Phasa</item>
+    </string-array>
+
+
+    <string-array name="kva">
+        <item>-Select-</item>
+        <item>025</item>
+        <item>050</item>
+        <item>100</item>
+        <item>160</item>
+        <item>200</item>
+        <item>>200</item>
+    </string-array>
+
+
+    <string-array name="jenis_trafo">
+        <item>-Select-</item>
+        <item>Pelanggan Umum (PU)</item>
+        <item>Pelanggan Khusus (PK)</item>
+        <item>Pelanggan Sendiri (PS)</item>
+        <item>Milik Pelanggan (MP)</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>
