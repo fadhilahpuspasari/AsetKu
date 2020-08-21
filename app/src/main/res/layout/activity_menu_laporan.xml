@@ -13,12 +13,13 @@
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="56dp">
+        tools:layout_editor_absoluteY="56dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="0dp">
 
             <ImageView
@@ -31,69 +32,45 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="-89dp"
                 android:layout_marginTop="140dp"
-                android:text="Aset"
+                android:text="Laporan"
                 android:textSize="24sp"
                 android:textStyle="bold"></TextView>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/button_maps"
+            android:layout_width="325dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-50dp">
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button7"
+            android:text="Maps"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="200dp"
-                android:text="Trafo"
-                android:textSize="20sp"
-                android:textStyle="bold">
-
-            </TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/button_datasemua"
+            android:layout_width="325dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-185dp"
-            android:layout_marginTop="270dp">
-
-            <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="241dp"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="64dp"
-                android:background="#00000000"
-                android:scaleType="fitXY"
-                android:scaleX="1.99"
-                android:scaleY="1"
-                android:src="@mipmap/data_foreground">
-
-            </ImageButton>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="270dp">
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button8"
+            android:text="Data"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
 
-            <ImageButton
-                android:layout_width="130dp"
-                android:layout_height="241dp"
-                android:layout_margin="10dp"
-                android:layout_marginBottom="64dp"
-                android:background="#00000000"
-                android:scaleType="fitXY"
-                android:scaleX="1.99"
-                android:scaleY="1"
-                android:src="@mipmap/pengukuran_foreground"></ImageButton>
-        </LinearLayout>
 
     </LinearLayout>
 

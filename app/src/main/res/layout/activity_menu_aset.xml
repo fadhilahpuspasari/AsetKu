@@ -62,6 +62,7 @@
             android:layout_marginTop="270dp">
 
             <ImageButton
+                android:id="@+id/button_data"
                 android:layout_width="130dp"
                 android:layout_height="241dp"
                 android:layout_margin="10dp"
@@ -84,6 +85,7 @@
 
 
             <ImageButton
+                android:id="@+id/button_pengukuran"
                 android:layout_width="130dp"
                 android:layout_height="241dp"
                 android:layout_margin="10dp"

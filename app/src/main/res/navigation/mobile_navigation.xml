@@ -7,14 +7,18 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.assetku.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.fadhilah.assetku.MainActivity"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_setting"
+            app:destination="@id/navigation_setting" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.assetku.ui.dashboard.DashboardFragment"
-        android:label="@string/title_setting"
+        android:id="@+id/navigation_setting"
+        android:name="com.fadhilah.assetku.FragmentSetting"
+        android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" />
 
 </navigation>

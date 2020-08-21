@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".UpdateData">
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffffff"
-    android:padding="20dp"
-    tools:context=".update_data">
+    android:padding="20dp">
 
     <TextView
         android:layout_width="match_parent"
@@ -54,7 +54,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/in_date"
+                android:id="@+id/txtDate"
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -68,9 +68,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/username" />
 
             <ImageButton
-                android:id="@+id/btn_time"
+                android:id="@+id/btnDatePicker"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="63dp"
                 android:layout_alignBottom="@+id/in_date"
                 android:layout_toEndOf="@+id/in_date"
                 android:layout_toRightOf="@+id/in_date"
@@ -96,7 +98,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/in_time"
+                android:id="@+id/txtTime"
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -110,9 +112,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/username" />
 
             <ImageButton
-                android:id="@+id/btn_date"
+                android:id="@+id/btnTimePicker"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="57dp"
                 android:layout_alignBottom="@+id/in_time"
                 android:layout_toEndOf="@+id/in_time"
                 android:layout_toRightOf="@+id/in_time"
@@ -234,6 +238,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
+            android:id="@+id/section"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -273,6 +278,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
+            android:id="@+id/notiangFCO"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -312,6 +318,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
+            android:id="@+id/notiang"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -386,6 +393,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
+            android:id="@+id/nomorseri"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -425,6 +433,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
+            android:id="@+id/tahunpembuatan"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -540,6 +549,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
+            android:id="@+id/latitude"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -579,6 +589,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
+            android:id="@+id/longitude"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -618,6 +629,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText
+            android:id="@+id/pelaksana"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -649,17 +661,14 @@
 
 
     <Button
-        android:id="@+id/submit"
+        android:id="@+id/button_submit"
         android:layout_width="325dp"
-        android:layout_marginLeft="45dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:layout_marginLeft="23dp"
         android:text="Submit"
         android:textColor="#ffffff"
         android:background="@drawable/button2"/>
-
-
-
 
 
 

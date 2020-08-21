@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.assetku">
+    package="com.fadhilah.assetku">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -15,55 +15,49 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".FragmentSetting"></activity>
+        <activity android:name=".MenuLaporanData" />
+        <activity android:name=".MainFragment" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".RegisterActivity"
             android:label="@string/title_activity_register"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_menu"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".maps"
+            android:name=".Maps"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".pengukuran_trafo3" />
-        <activity android:name=".pengukuran_trafo1" />
-        <activity android:name=".update_data" />
-        <activity android:name=".menu_laporan" />
-        <activity android:name=".menu_pengukuran" />
-        <activity android:name=".menu_data" />
-        <activity android:name=".menu_aset" />
+        <activity android:name=".MenuPengukuranTrafo3" />
+        <activity android:name=".MenuPengukuranTrafo1" />
+        <activity android:name=".UpdateData" />
+        <activity android:name=".MenuLaporan" />
+        <activity android:name=".MenuPengukuran" />
+        <activity android:name=".MenuData" />
+        <activity android:name=".MenuAset" />
         <activity
             android:name=".Menu"
             android:label="@string/title_activity_menu" />
-
         <activity android:name=".User" />
-
     </application>
 
 </manifest>

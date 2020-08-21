@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffffff"
-    tools:context=".menu_data">
+    tools:context=".MenuPengukuran">
 
     <TextView
         android:layout_width="match_parent"
@@ -30,6 +30,7 @@
         android:layout_marginTop="-660dp">
 
         <Button
+            android:id="@+id/button_trafo1"
             android:layout_width="325dp"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -37,7 +38,6 @@
             android:layout_marginTop="0dp"
             android:layout_marginLeft="43dp"
             android:background="@drawable/button5"
-            android:enabled="false"
             android:text="Trafo 1 Phasa"
             android:textAllCaps="false"
             android:textColor="#ffffff"
@@ -46,6 +46,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
+            android:id="@+id/button_trafo3"
             android:layout_width="325dp"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -53,8 +54,7 @@
             android:layout_marginTop="0dp"
             android:layout_marginLeft="43dp"
             android:background="@drawable/button6"
-            android:enabled="false"
-            android:text="Trafo 1 Phasa"
+            android:text="Trafo 3 Phasa"
             android:textAllCaps="false"
             android:textColor="#ffffff"
             android:textSize="15sp"
