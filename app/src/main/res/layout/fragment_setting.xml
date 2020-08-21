@@ -31,7 +31,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="300dp"
-        android:src="@mipmap/profile_foreground"></ImageView>
+        android:src="@mipmap/profile_foreground">
+
+    </ImageView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,7 +42,9 @@
         android:layout_marginTop="430dp"
         android:text="Fadhilah Puspasari"
         android:textSize="17sp"
-        android:textStyle="bold"></TextView>
+        android:textStyle="bold">
+
+    </TextView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -49,7 +53,9 @@
         android:layout_marginTop="460dp"
         android:text="fadhilahpuspasari@gmail.com"
         android:textColor="#949494"
-        android:textSize="14sp"></TextView>
+        android:textSize="14sp">
+
+    </TextView>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -60,7 +66,9 @@
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/ic_baseline_info_24"></ImageView>
+            android:src="@drawable/ic_baseline_info_24">
+
+        </ImageView>
 
     </LinearLayout>
 
@@ -74,7 +82,9 @@
         android:text="Bantuan"
         android:textAllCaps="false"
         android:textColor="#959595"
-        android:textSize="12sp"></Button>
+        android:textSize="12sp">
+
+    </Button>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -85,7 +95,9 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@mipmap/logout_foreground"></ImageView>
+            android:src="@mipmap/logout_foreground">
+
+        </ImageView>
 
     </LinearLayout>
 
@@ -99,6 +111,8 @@
         android:text="Keluar"
         android:textAllCaps="false"
         android:textColor="#959595"
-        android:textSize="12sp"></Button>
+        android:textSize="12sp">
+
+    </Button>
 
 </LinearLayout>

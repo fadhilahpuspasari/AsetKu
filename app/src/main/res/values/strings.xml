@@ -206,6 +206,7 @@
         <item>Milik Pelanggan (MP)</item>
     </string-array>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_bottom_nav">MainActivity</string>
 
 
 </resources>

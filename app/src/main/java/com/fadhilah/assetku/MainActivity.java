@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()){
                     case R.id.navigation_home:
                         return true;
-
                     case R.id.navigation_setting:
                         startActivity(new Intent(getApplicationContext(),
                                 FragmentSetting.class));
