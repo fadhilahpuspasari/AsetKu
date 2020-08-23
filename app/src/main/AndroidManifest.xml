@@ -10,15 +10,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logoassetku"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logoassetku_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name=".BottomNav"
-            android:label="@string/title_activity_bottom_nav" >
-        </activity>
+<!--        <activity-->
+<!--            android:name=".BottomNav"-->
+<!--            android:label="@string/title_activity_bottom_nav" >-->
+<!--        </activity>-->
         <activity android:name=".FragmentSetting" />
         <activity android:name=".MenuLaporanData" />
         <activity android:name=".MainFragment" />
