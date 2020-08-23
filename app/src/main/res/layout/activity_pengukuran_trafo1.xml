@@ -137,6 +137,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
             <EditText
+                android:id="@+id/petugas"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -175,6 +176,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <EditText
+                android:id="@+id/notiang"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -216,6 +218,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <EditText
+                android:id="@+id/x1"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -256,6 +259,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <EditText
+                android:id="@+id/x2"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -295,6 +299,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <EditText
+                android:id="@+id/n"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -334,6 +339,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <EditText
+                android:id="@+id/teganganpangkal"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -373,6 +379,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <EditText
+                android:id="@+id/teganganujung"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"

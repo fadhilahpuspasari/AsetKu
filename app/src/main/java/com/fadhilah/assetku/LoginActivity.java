@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     //Check Authentication is successful or not
                     if (currentUser != null) {
-                        Snackbar.make(buttonLogin, "Successfully Logged in!", Snackbar.LENGTH_LONG).show();
+                        Snackbar.make(buttonLogin, "Berhasil Masuk", Snackbar.LENGTH_LONG).show();
                         LoggedInUser loggedInUser = new LoggedInUser(currentUser.id, currentUser.userName);
                         loginRepository.login(LoginActivity.this, loggedInUser);
 
@@ -83,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
                     } else {
 
                         //User Logged in Failed
-                        Snackbar.make(buttonLogin, "Failed to log in , please try again", Snackbar.LENGTH_LONG).show();
+                        Snackbar.make(buttonLogin, "Tidak Berhasil Masuk , Coba Lagi", Snackbar.LENGTH_LONG).show();
 
                     }
 
@@ -95,7 +95,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                System.out.println("Register clicked");
+                System.out.println("Pendaftaran Dipilih");
 
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
@@ -156,7 +156,7 @@ public class LoginActivity extends AppCompatActivity {
 //        TextInputLayout textInputLayoutEmail = null;
         if (!android.util.Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
             valid = false;
-            textInputLayoutEmail.setError("Please enter valid email!");
+            textInputLayoutEmail.setError("Masukkan Email!");
         } else {
             valid = true;
             textInputLayoutEmail.setError(null);
@@ -166,14 +166,14 @@ public class LoginActivity extends AppCompatActivity {
 //        TextInputLayout textInputLayoutPassword = null;
         if (Password.isEmpty()) {
             valid = false;
-            textInputLayoutPassword.setError("Please enter valid password!");
+            textInputLayoutPassword.setError("Masukkan Password!");
         } else {
             if (Password.length() > 5) {
                 valid = true;
                 textInputLayoutPassword.setError(null);
             } else {
                 valid = false;
-                textInputLayoutPassword.setError("Password is to short!");
+                textInputLayoutPassword.setError("Password Terlalu Pendek");
             }
         }
 

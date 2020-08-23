@@ -4,18 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
 public class MenuLaporanData extends AppCompatActivity implements View.OnClickListener {
 
-    ImageButton btnDatePicker, btnTimePicker;
+    ImageButton btnDatePicker, btnTimePicker,button_download;
     EditText txtDate, txtTime;
     private int mYear, mMonth, mDay, mHour, mMinute;
 
@@ -28,9 +31,32 @@ public class MenuLaporanData extends AppCompatActivity implements View.OnClickLi
         btnTimePicker = (ImageButton) findViewById(R.id.btnTimePicker);
         txtDate = (EditText) findViewById(R.id.txtDate);
         txtTime = (EditText) findViewById(R.id.txtTime);
+        button_download=(ImageButton)findViewById(R.id.button_download);
 
         btnDatePicker.setOnClickListener(this);
         btnTimePicker.setOnClickListener(this);
+        button_download.setOnClickListener(this);
+
+        final EditText Input = findViewById(R.id.txtDate);
+        final EditText Input2 = findViewById(R.id.txtTime);
+
+        ImageButton Download = findViewById(R.id.button_download);
+
+        Download.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String Text = Input.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Tanggal Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input2.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Waktu Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                toast();
+            }
+        });
+
 
     }
 
@@ -79,5 +105,13 @@ public class MenuLaporanData extends AppCompatActivity implements View.OnClickLi
                     }, mHour, mMinute, false);
             timePickerDialog.show();
         }
+    }
+    public void toast(){
+        Context context=getApplicationContext();
+        CharSequence text="Berhasil Mengunduh Berkas";
+        int durasi=Toast.LENGTH_LONG;
+
+        Toast toast=Toast.makeText(context, text, durasi);
+        toast.show();
     }
 }

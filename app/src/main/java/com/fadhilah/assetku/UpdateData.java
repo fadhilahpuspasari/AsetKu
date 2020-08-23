@@ -40,14 +40,16 @@ public class UpdateData extends AppCompatActivity implements View.OnClickListene
         btnDatePicker.setOnClickListener(this);
         btnTimePicker.setOnClickListener(this);
 
-        final EditText Input = findViewById(R.id.section);
-        final EditText Input2 = findViewById(R.id.notiang);
-        final EditText Input3 = findViewById(R.id.notiangFCO);
-        final EditText Input4 = findViewById(R.id.nomorseri);
-        final EditText Input5 = findViewById(R.id.pelaksana);
-        final EditText Input6 = findViewById(R.id.tahunpembuatan);
-        final EditText Input7 = findViewById(R.id.latitude);
-        final EditText Input8 = findViewById(R.id.longitude);
+        final EditText Input = findViewById(R.id.txtDate);
+        final EditText Input2 = findViewById(R.id.txtTime);
+        final EditText Input3 = findViewById(R.id.section);
+        final EditText Input4 = findViewById(R.id.notiang);
+        final EditText Input5 = findViewById(R.id.notiangFCO);
+        final EditText Input6 = findViewById(R.id.nomorseri);
+        final EditText Input7 = findViewById(R.id.pelaksana);
+        final EditText Input8 = findViewById(R.id.tahunpembuatan);
+        final EditText Input9 = findViewById(R.id.latitude);
+        final EditText Input10 = findViewById(R.id.longitude);
 
         Button Submit = findViewById(R.id.button_submit);
 
@@ -56,8 +58,45 @@ public class UpdateData extends AppCompatActivity implements View.OnClickListene
             public void onClick(View v) {
                 String Text = Input.getText().toString();
                 if (Text.isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "Data Tersimpan", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Tanggal Harus Diisi", Toast.LENGTH_SHORT).show();
                 }
+                Text = Input2.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Waktu Harus Diisin", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input3.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Section Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input4.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "No Tiang Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input5.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "No Tiang FCO Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input6.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Nomor Seri Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input7.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Pelaksana Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input8.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Tahun Pembuatan Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input9.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Latitude Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input10.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Longitude Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                toast();
             }
         });
     }
@@ -110,8 +149,13 @@ public class UpdateData extends AppCompatActivity implements View.OnClickListene
 
 
     }
+    public void toast(){
+        Context context=getApplicationContext();
+        CharSequence text="Data Tersimpan";
+        int durasi=Toast.LENGTH_LONG;
 
+        Toast toast=Toast.makeText(context, text, durasi);
+        toast.show();
+    }
 
-
-    
 }

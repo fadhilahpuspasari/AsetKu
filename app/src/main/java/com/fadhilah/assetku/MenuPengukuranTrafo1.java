@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +12,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -35,6 +37,62 @@ public class MenuPengukuranTrafo1 extends AppCompatActivity implements View.OnCl
         btnDatePicker.setOnClickListener(this);
         btnTimePicker.setOnClickListener(this);
         button_submit.setOnClickListener(this);
+
+        final EditText Input = findViewById(R.id.txtDate);
+        final EditText Input2 = findViewById(R.id.txtTime);
+        final EditText Input3 = findViewById(R.id.petugas);
+        final EditText Input4 = findViewById(R.id.notiang);
+        final EditText Input5 = findViewById(R.id.x1);
+        final EditText Input6 = findViewById(R.id.x2);
+        final EditText Input7 = findViewById(R.id.n);
+        final EditText Input8 = findViewById(R.id.teganganpangkal);
+        final EditText Input9 = findViewById(R.id.teganganujung);
+
+
+        Button Submit = findViewById(R.id.button_submit);
+
+        Submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String Text = Input.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Tanggal Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input2.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Waktu Harus Diisin", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input3.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Petugas Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input4.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "No Tiang Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input5.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "X1 Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input6.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "X2 Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input7.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "N Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input8.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Tegangan Pangkal Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                Text = Input9.getText().toString();
+                if (Text.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Tegangan Ujung Harus Diisi", Toast.LENGTH_SHORT).show();
+                }
+                toast();
+            }
+        });
 
     }
 
@@ -83,5 +141,13 @@ public class MenuPengukuranTrafo1 extends AppCompatActivity implements View.OnCl
                     }, mHour, mMinute, false);
             timePickerDialog.show();
         }
+    }
+    public void toast(){
+        Context context=getApplicationContext();
+        CharSequence text="Data Tersimpan";
+        int durasi=Toast.LENGTH_LONG;
+
+        Toast toast=Toast.makeText(context, text, durasi);
+        toast.show();
     }
 }

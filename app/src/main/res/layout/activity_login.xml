@@ -10,10 +10,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
     android:background="#ffffff">
 
 
@@ -28,17 +25,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:src="@mipmap/pln3_foreground">
 
         </ImageView>
 
         <ImageView
-            android:layout_width="512dp"
-            android:layout_height="462dp"
-            android:layout_marginLeft="-205dp"
+            android:layout_width="734dp"
+            android:layout_height="508dp"
+            android:layout_marginStart="-300dp"
+            android:layout_marginLeft="-230dp"
             android:layout_marginTop="70dp"
-            android:layout_marginRight="290dp"
+            android:layout_marginEnd="300dp"
+            android:layout_marginRight="0dp"
             android:src="@mipmap/latar_foreground">
 
         </ImageView>
@@ -59,9 +58,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="40dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="47dp"
             android:text="Selamat Datang"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -78,11 +76,9 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="24dp"
+                android:layout_width="319dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="47dp"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress" />
 
@@ -99,11 +95,9 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="24dp"
+                android:layout_width="319dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="47dp"
                 android:hint="@string/password"
                 android:inputType="textPassword" />
 
@@ -112,10 +106,10 @@
 
         <Button
             android:id="@+id/buttonLogin"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_width="319dp"
+            android:layout_height="50dp"
             android:layout_gravity="start"
-            android:layout_marginLeft="27dp"
+            android:layout_marginLeft="47dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/button1"
             android:text="@string/action_sign_in"
@@ -147,10 +141,10 @@
 
         <Button
             android:id="@+id/buttonRegister"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="319dp"
+            android:layout_height="50dp"
             android:layout_gravity="start"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="47dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/button2"
@@ -162,9 +156,6 @@
             app:layout_constraintStart_toStartOf="parent" />
 
     </LinearLayout>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -43,21 +43,21 @@ public class RegisterActivity extends AppCompatActivity {
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("Register button clicked");
+                System.out.println("Pendaftaran Dipilih");
                 if (validate()) {
                     String UserName = editTextUserName.getText().toString();
                     String Email = editTextEmail.getText().toString();
                     String Password = editTextPassword.getText().toString();
                     boolean isEmailExist = sqliteHelper.isEmailExists(Email);
 
-                    System.out.println("Is email exist: " + isEmailExist);
+                    System.out.println("Email Tidak Terdaftar: " + isEmailExist);
 
                     //Check in the database is there any user associated with  this email
                     if (!isEmailExist) {
-                        System.out.println("Create a new user");
+                        System.out.println("Buat Akun Baru");
                         //Email does not exist now add new user to database
                         sqliteHelper.addUser(new User(null, UserName, Email, Password));
-                        Snackbar.make(buttonRegister, "User created successfully! Please Login ", Snackbar.LENGTH_LONG).show();
+                        Snackbar.make(buttonRegister, "Berhasil Membuat Akun Baru! Silakan Masuk ", Snackbar.LENGTH_LONG).show();
                         new Handler().postDelayed(new Runnable() {
                             @Override
                             public void run() {
@@ -67,9 +67,9 @@ public class RegisterActivity extends AppCompatActivity {
                             }
                         }, Snackbar.LENGTH_LONG);
                     }else {
-                        System.out.println("Email exist");
+                        System.out.println("Email Terdaftar");
                         //Email exists with email input provided so show error user already exist
-                        Snackbar.make(buttonRegister, "User already exists with same email ", Snackbar.LENGTH_LONG).show();
+                        Snackbar.make(buttonRegister, "Email Sudah Pernah Digunakan", Snackbar.LENGTH_LONG).show();
                     }
 
 
@@ -115,21 +115,21 @@ public class RegisterActivity extends AppCompatActivity {
         //Handling validation for UserName field
         if (UserName.isEmpty()) {
             valid = false;
-            textInputLayoutUserName.setError("Please enter valid username!");
+            textInputLayoutUserName.setError("Masukkan Nama!");
         } else {
             if (UserName.length() > 5) {
                 valid = true;
                 textInputLayoutUserName.setError(null);
             } else {
                 valid = false;
-                textInputLayoutUserName.setError("Username is to short!");
+                textInputLayoutUserName.setError("Nama Terlalu Pendek");
             }
         }
 
         //Handling validation for Email field
         if (!android.util.Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
             valid = false;
-            textInputLayoutEmail.setError("Please enter valid email!");
+            textInputLayoutEmail.setError("Masukkan Email!");
         } else {
             valid = true;
             textInputLayoutEmail.setError(null);
@@ -138,14 +138,14 @@ public class RegisterActivity extends AppCompatActivity {
         //Handling validation for Password field
         if (Password.isEmpty()) {
             valid = false;
-            textInputLayoutPassword.setError("Please enter valid password!");
+            textInputLayoutPassword.setError("Masukkan Password!");
         } else {
             if (Password.length() > 5) {
                 valid = true;
                 textInputLayoutPassword.setError(null);
             } else {
                 valid = false;
-                textInputLayoutPassword.setError("Password is to short!");
+                textInputLayoutPassword.setError("Password Terlalu Pendek");
             }
         }
 
